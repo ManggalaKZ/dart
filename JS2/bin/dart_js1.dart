@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // for (int i = 18; i >= 9; i--) {
   //   print('Nama Saya Manggala, sekarang saya berumur $i');
@@ -64,4 +66,7 @@ void main() {
       print(i);
     }
   }
+
+  stdout.write("Masukkan angka pertama: ");
+  int? angka1 = int.parse(stdin.readLineSync()!);
 }
